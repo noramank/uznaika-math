@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <link rel="icon" href="https://i.pinimg.com/originals/b9/bb/9d/b9bb9d65f49f5c7c9f0f51dc7c34e43a.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://jmp.sh/s/Y56W9mWwAGheg5lvdEPt">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Веселая математика</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a:active:after {
+            content: attr(title);
+            position: absolute;
+        }
+
+        body {
+            font-family: Tahoma, sans-serif;
+            background: linear-gradient(rgba(0, 171, 238, 0.6), rgba(250, 250, 250, 0.979));
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 24.52vw;
+            background-color: #f9f9f97e;
+            display: flex;
+            flex-direction: column;
+            padding: 2vw;
+            overflow-y: auto;
+            scrollbar-color: rgba(0, 175, 239, 0.9) #fffffff9;
+        }
+
+        .bookmark1 {
+            display: flex;
+            align-items: center;
+            background-color: #fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.6vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        
+        .bookmark2 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid  rgb(0, 174, 239);
+            border-radius: 4vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark3 {
+            display: flex;
+            align-items: center;
+            background-color: #fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        
+        .bookmark4 {
+            display: flex;
+            align-items: center;
+            background-color: #fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark5 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark6 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark7 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark8 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark9 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark10 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark11 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        .bookmark12 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark13 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark14 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark15 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark16 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .bookmark17 {
+            display: flex;
+            align-items: center;
+            background-color:#fffffff9;
+            border: 0.16vw solid rgb(0, 174, 239);
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        .bookmark18 {
+            display: flex;
+            align-items: center;
+            background-color:rgb(0, 174, 239);
+            border: 0.16vw solid #fffffff9;
+            border-radius: 28vw;
+            padding: 0.4vw 0.4vw;
+            margin-top: 1.2vw;
+            cursor: pointer;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+            margin-bottom: 1.6vw;
+        }
+
+        .bookmark1:hover {
+            transform: scale(1.02);
+        }
+
+        .bookmark2:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark3:hover {
+            transform: scale(1.02);
+        }
+
+        .bookmark4:hover {
+            transform: scale(1.02);
+        }
+
+        .bookmark5:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark6:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark7:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark8:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark9:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark10:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark11:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark12:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark13:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark14:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark15:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark16:hover {
+            transform: scale(1.02);
+        }
+        
+        .bookmark17:hover {
+            transform: scale(1.02);
+        }
+         .bookmark18:hover {
+            transform: scale(1.02);
+        }
+
+        .bookmark1 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        
+        .bookmark2 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+
+        .bookmark3 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark4 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+
+        .bookmark5 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark6 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark7 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark8 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark9 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark10 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark11 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark12 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark13 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark14 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark15 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark16 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark17 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+        .bookmark18 img {
+            width: 3vw;
+            height: 3vw;
+            margin-right: 1vw;
+        }
+
+        .bookmark1 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+
+        .bookmark2 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+
+        .bookmark3 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            margin-right: 0.8vw;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark4 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark5 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark6 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark7 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark8 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark9 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark10 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark11 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark12 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark13 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark14 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark15 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark16 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark17 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(0, 174, 239);
+        }
+        .bookmark18 span {
+            white-space:nowrap;
+            table-layout: fixed;
+            margin-right: 0.8vw;
+            overflow:hidden;
+            text-overflow:ellipsis;
+            font-size: 1.2vw;
+            font-weight: bold;
+            color: rgb(250, 250, 250);
+        }
+        
+
+        .pdf-container {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .book {
+            display: flex;
+            position: relative;
+            width:56vw;
+            height: 40vw;
+            overflow: hidden;
+        }
+
+        .page {
+            width: 50%;
+            height: 100%;
+            background-size: 100% 100%;
+            background-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .page-left {
+            border-right: 0.1vw solid #bdbdbd;
+        }
+
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            width: 4vw;
+            height: 4vw;
+            border: 0.16vw solid rgba(0, 175, 239, 0.797);
+            border-radius: 50%;
+            background-color: #fffffff9;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-50%);
+            z-index: 10;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-50%) scale(1.05);
+            background-color:#f9f9f9b9;
+        }
+
+        .nav-left {
+            left: 4vw;
+        }
+
+        .nav-right {
+            right: 4vw;
+        }
+
+        .nav-button svg {
+            width: 2.4vw;
+            height: 2.4vw;
+            fill: rgba(0, 175, 239, 0.797);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <p {scroll-behavior: smooth;}>
+        <div class="bookmark1" onclick="jumpTo(4)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ПЕРВЫЙ ДЕСЯТОК.СРАВНЕНИЕ ЧИСЕЛ.СЛОЖЕНИЕ И ВЫЧИТАНИЕ">ПЕРВЫЙ ДЕСЯТОК</p></span>
+            <script >
+            if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                <span><a href="#" title="ПЕРВЫЙ ДЕСЯТОК.СРАВНЕНИЕ ЧИСЕЛ.СЛОЖЕНИЕ И ВЫЧИТАНИЕ" ontouchstart="">ПЕРВЫЙ ДЕСЯТОК</a></span>
+                }
+        </script>
+        </div>
+        <div class="bookmark2" onclick="jumpTo(6)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ВТОРОЙ ДЕСЯТОК. СРАВНЕНИЕ ЧИСЕЛ. СЛОЖЕНИЕ И ВЫЧИТАНИЕ">ВТОРОЙ ДЕСЯТОК</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ВТОРОЙ ДЕСЯТОК. СРАВНЕНИЕ ЧИСЕЛ. СЛОЖЕНИЕ И ВЫЧИТАНИЕ" ontouchstart="">ВТОРОЙ ДЕСЯТОК</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark3" onclick="jumpTo(8)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ЧИСЛА ОТ 1 ДО 100. СРАВНЕНИЕ ЧИСЕЛ. СЛОЖЕНИЕ И ВЫЧИТАНИЕ">ЧИСЛА ОТ 1 ДО 100</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ЧИСЛА ОТ 1 ДО 100. СРАВНЕНИЕ ЧИСЕЛ. СЛОЖЕНИЕ И ВЫЧИТАНИЕ" ontouchstart="">ЧИСЛА ОТ 1 ДО 100</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark4" onclick="jumpTo(12)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ЧИСЛА БОЛЬШЕ 100. РАЗРЯДЫ. СРАВНЕНИЕ ЧИСЕЛ. СЛОЖЕНИЕ И ВЫЧИТАНИЕ">ЧИСЛА БОЛЬШЕ 100</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ЧИСЛА БОЛЬШЕ 100. РАЗРЯДЫ. СРАВНЕНИЕ ЧИСЕЛ. СЛОЖЕНИЕ И ВЫЧИТАНИЕ" ontouchstart="">ЧИСЛА БОЛЬШЕ 100</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark5" onclick="jumpTo(16)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="УМНОЖЕНИЕ И ДЕЛЕНИЕ. СМЫСЛ УМНОЖЕНИЯ И ДЕЛЕНИЯ. ТАБЛИЦА УМНОЖЕНИЯ">УМНОЖЕНИЕ И ДЕЛЕНИЕ. СМЫСЛ УМНОЖЕНИЯ И ДЕЛЕНИЯ. ТАБЛИЦА УМНОЖЕНИЯ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="УМНОЖЕНИЕ И ДЕЛЕНИЕ. СМЫСЛ УМНОЖЕНИЯ И ДЕЛЕНИЯ. ТАБЛИЦА УМНОЖЕНИЯ" ontouchstart="">УМНОЖЕНИЕ И ДЕЛЕНИЕ. СМЫСЛ УМНОЖЕНИЯ И ДЕЛЕНИЯ. ТАБЛИЦА УМНОЖЕНИЯ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark6" onclick="jumpTo(20)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ВНЕТАБЛИЧНОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ">ВНЕТАБЛИЧНОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ВНЕТАБЛИЧНОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ" ontouchstart="">ВНЕТАБЛИЧНОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark7" onclick="jumpTo(23)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ПИСЬМЕННОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ">ПИСЬМЕННОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ПИСЬМЕННОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ" ontouchstart="">ПИСЬМЕННОЕ УМНОЖЕНИЕ И ДЕЛЕНИЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark8" onclick="jumpTo(26)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="БУКВЕННЫЕ ВЫРАЖЕНИЯ. УРАВНЕНИЯ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ">УРАВНЕНИЯ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="БУКВЕННЫЕ ВЫРАЖЕНИЯ. УРАВНЕНИЯ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ" ontouchstart="">УРАВНЕНИЯ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark9" onclick="jumpTo(28)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="БУКВЕННЫЕ ВЫРАЖЕНИЯ. УРАВНЕНИЕ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ">УРАВНЕНИЕ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="БУКВЕННЫЕ ВЫРАЖЕНИЯ. УРАВНЕНИЕ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ" ontouchstart="">УРАВНЕНИЕ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark10" onclick="jumpTo(30)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ПРИМЕРЫ НА ВСЕ ДЕЙСТВИЯ">ПРИМЕРЫ НА ВСЕ ДЕЙСТВИЯ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ПРИМЕРЫ НА ВСЕ ДЕЙСТВИЯ" ontouchstart="">ПРИМЕРЫ НА ВСЕ ДЕЙСТВИЯ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark11" onclick="jumpTo(32)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ЗАДАЧИ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ">ЗАДАЧИ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ЗАДАЧИ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ" ontouchstart="">ЗАДАЧИ НА СЛОЖЕНИЕ И ВЫЧИТАНИЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark12" onclick="jumpTo(36)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ЗАДАЧИ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ">ЗАДАЧИ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ЗАДАЧИ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ" ontouchstart="">ЗАДАЧИ НА УМНОЖЕНИЕ И ДЕЛЕНИЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark13" onclick="jumpTo(40)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ЗАДАЧИ НА ЗАВИСИМОСТЬ МЕЖДУ ВЕЛИЧИНАМИ">ЗАДАЧИ НА ЗАВИСИМОСТЬ МЕЖДУ ВЕЛИЧИНАМИ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ЗАДАЧИ НА ЗАВИСИМОСТЬ МЕЖДУ ВЕЛИЧИНАМИ" ontouchstart="">ЗАДАЧИ НА ЗАВИСИМОСТЬ МЕЖДУ ВЕЛИЧИНАМИ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark14" onclick="jumpTo(44)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ЕДИНИЦЫ ИЗМЕРЕНИЯ. ПРЕОБРАЗОВАНИЕ. СРАВНЕНИЕ. ВЫЧИСЛЕНИЕ">ЕДИНИЦЫ ИЗМЕРЕНИЯ. ПРЕОБРАЗОВАНИЕ. СРАВНЕНИЕ. ВЫЧИСЛЕНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ЕДИНИЦЫ ИЗМЕРЕНИЯ. ПРЕОБРАЗОВАНИЕ. СРАВНЕНИЕ. ВЫЧИСЛЕНИЕ" ontouchstart="">ЕДИНИЦЫ ИЗМЕРЕНИЯ. ПРЕОБРАЗОВАНИЕ. СРАВНЕНИЕ. ВЫЧИСЛЕНИЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark15" onclick="jumpTo(48)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ПЕРИМЕТР, ПЛОЩАДЬ, ОБЪЁМ">ПЕРИМЕТР, ПЛОЩАДЬ, ОБЪЁМ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ПЕРИМЕТР, ПЛОЩАДЬ, ОБЪЁМ" ontouchstart="">ПЕРИМЕТР, ПЛОЩАДЬ, ОБЪЁМ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark16" onclick="jumpTo(52)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="ДОЛИ И ДРОБИ">ДОЛИ И ДРОБИ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="ДОЛИ И ДРОБИ" ontouchstart="">ДОЛИ И ДРОБИ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark17" onclick="jumpTo(56)">
+            <img src="https://i.postimg.cc/sf018ytb/1.png" alt="">
+            <span><p title="УСТНЫЙ СЧЁТ">УСТНЫЙ СЧЕТ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="УСТНЫЙ СЧЕ" ontouchstart="">УСТНЫЙ СЧЕ</a></span>
+                    }
+            </script>
+        </div>
+        <div class="bookmark18" onclick="jumpTo(60)">
+            <img src="https://i.postimg.cc/wj1Y4yCs/1.png" alt="">
+            <span><p title="СОДЕРЖАНИЕ">СОДЕРЖАНИЕ</p></span>
+            <script >
+                if(/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)){
+                    <span><a href="#" title="СОДЕРЖАНИЕ" ontouchstart="">СОДЕРЖАНИЕ</a></span>
+                    }
+            </script>
+        </div>
+    </div>
+    <div class="pdf-container">
+        <button class="nav-button nav-left" onclick="prevPage()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z"/></svg>
+        </button>
+
+        <div class="book">
+            <div id="left-page" class="page page-left"></div>
+            <div id="right-page" class="page"></div>
+        </div>
+
+        <button class="nav-button nav-right" onclick="nextPage()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z"/></svg>
+        </button>
+    </div>
+
+    <script>
+        const pages = [
+        ' ',
+        'https://i.postimg.cc/mZJHC3bz/13-06-sof-01.png',
+        'https://i.postimg.cc/bNn2TGJ6/13-06-sof-02.png',
+        'https://i.postimg.cc/PJpv0JM5/13-06-sof-03.png',
+        'https://i.postimg.cc/fyGSssHj/13-06-sof-04.png',
+        'https://i.postimg.cc/2SFbsPnh/13-06-sof-05.png',
+        'https://i.postimg.cc/CxVn6Fnw/13-06-sof-06.png',
+        'https://i.postimg.cc/43WKdVL3/13-06-sof-07.png',
+        'https://i.postimg.cc/jjxwtZh9/13-06-sof-08.png',
+        'https://i.postimg.cc/RF8N19z5/13-06-sof-09.png',
+        'https://i.postimg.cc/2631ByM7/13-06-sof-10.png',
+        'https://i.postimg.cc/brtd3MzG/13-06-sof-11.png',
+        'https://i.postimg.cc/fkQyFKL8/13-06-sof-12.png',
+        'https://i.postimg.cc/ZYC7xhdf/13-06-sof-13.png',
+        'https://i.postimg.cc/CL8c9HJk/13-06-sof-14.png',
+        'https://i.postimg.cc/gcQMMByG/13-06-sof-15.png',
+        'https://i.postimg.cc/RZzgm6b8/13-06-sof-16.png',
+        'https://i.postimg.cc/fRjBRzGb/13-06-sof-17.png',
+        'https://i.postimg.cc/3wt12LJ5/13-06-sof-18.png',
+        'https://i.postimg.cc/SKSV204f/13-06-sof-19.png',
+        'https://i.postimg.cc/wvPkG7mw/13-06-sof-20.png',
+        'https://i.postimg.cc/nzMk2vCs/13-06-sof-21.png',
+        'https://i.postimg.cc/kGby3qNq/13-06-sof-22.png',
+        'https://i.postimg.cc/sfQmZ9kq/13-06-sof-23.png',
+        'https://i.postimg.cc/7PFV1JD6/13-06-sof-24.png',
+        'https://i.postimg.cc/5N8ms9Nm/13-06-sof-25.png',
+        'https://i.postimg.cc/htg16FXR/13-06-sof-26.png',
+        'https://i.postimg.cc/Nj4kwNX9/13-06-sof-27.png',
+        'https://i.postimg.cc/fbRjWx7H/13-06-sof-28.png',
+        'https://i.postimg.cc/R0p1WNXv/13-06-sof-29.png',
+        'https://i.postimg.cc/85FRMN0M/13-06-sof-30.png',
+        'https://i.postimg.cc/TwZrcFzS/13-06-sof-31.png',
+        'https://i.postimg.cc/x8MLpgYd/13-06-sof-32.png',
+        'https://i.postimg.cc/VsC9NsMc/13-06-sof-33.png',
+        'https://i.postimg.cc/4NR6HCbH/13-06-sof-34.png',
+        'https://i.postimg.cc/28d44H2c/13-06-sof-35.png',
+        'https://i.postimg.cc/MpdVLnk1/13-06-sof-36.png',
+        'https://i.postimg.cc/YS0YBtkZ/13-06-sof-37.png',
+        'https://i.postimg.cc/bwz1LQ5z/13-06-sof-38.png',
+        'https://i.postimg.cc/YSPgpTC9/13-06-sof-39.png',
+        'https://i.postimg.cc/RFntqGWT/13-06-sof-40.png',
+        'https://i.postimg.cc/GtwyDYYn/13-06-sof-41.png',
+        'https://i.postimg.cc/J0NB5ncD/13-06-sof-42.png',
+        'https://i.postimg.cc/HWX5gZDY/13-06-sof-43.png',
+        'https://i.postimg.cc/L6SP6t2z/13-06-sof-44.png',
+        'https://i.postimg.cc/c4cnKvLP/13-06-sof-45.png',
+        'https://i.postimg.cc/2S8BnCqy/13-06-sof-46.png',
+        'https://i.postimg.cc/3xS0BzpB/13-06-sof-47.png',
+        'https://i.postimg.cc/ZqWBDjxh/13-06-sof-48.png',
+        'https://i.postimg.cc/YSTGcgdL/13-06-sof-49.png',
+        'https://i.postimg.cc/TwmyTws7/13-06-sof-50.png',
+        'https://i.postimg.cc/sxrMxzdV/13-06-sof-51.png',
+        'https://i.postimg.cc/Hn9V7Ndb/13-06-sof-52.png',
+        'https://i.postimg.cc/xT9kS935/13-06-sof-53.png',
+        'https://i.postimg.cc/ZY89gWp0/13-06-sof-54.png',
+        'https://i.postimg.cc/8Pw7pxyS/13-06-sof-55.png',
+        'https://i.postimg.cc/rwmKKgbt/13-06-sof-56.png',
+        'https://i.postimg.cc/R0JhThvS/13-06-sof-57.png',
+        'https://i.postimg.cc/DZVZphzq/13-06-sof-58.png',
+        'https://i.postimg.cc/TwrPZsyB/13-06-sof-59.png',
+        'https://i.postimg.cc/x8ndYPM8/13-06-sof-60.png',
+        'https://i.postimg.cc/yxj8NSyP/13-06-sof-61.png',
+        'https://i.postimg.cc/XNkJLT6C/13-06-sof-62.png',
+        'https://i.postimg.cc/PrfqR2dF/13-06-sof-63.png',
+        'https://i.postimg.cc/J4ThVZn7/13-06-sof-64.png',
+        ' ',
+        ];
+
+        let currentPage = 0;
+
+        const leftPageEl = document.getElementById('left-page');
+        const rightPageEl = document.getElementById('right-page');
+
+        function updateBook() {
+            // Левая страница
+            if (currentPage < pages.length) {
+                leftPageEl.style.backgroundImage = `url(${pages[currentPage]})`;
+            } else {
+                leftPageEl.style.backgroundImage = ``;
+            }
+
+            // Правая страница
+            if (currentPage + 1 < pages.length) {
+                rightPageEl.style.backgroundImage = `url(${pages[currentPage + 1]})`;
+            } else {
+                rightPageEl.style.backgroundImage = ``;
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                currentPage -= 2;
+                updateBook();
+            }
+        }
+
+        function nextPage() {
+            if (currentPage + 2 < pages.length) {
+                currentPage += 2;
+                updateBook();
+            }
+        }
+
+        function jumpTo(pageIndex) {
+            currentPage = pageIndex;
+            updateBook();
+        }
+
+        // Первая загрузка
+        updateBook();
+    </script>
+</body>
+</html>
